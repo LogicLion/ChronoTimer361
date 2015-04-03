@@ -1,0 +1,13 @@
+import javax.swing.JApplet;
+
+
+public class ChronoTimerEmulator extends JApplet {
+
+	/**
+	 * Create the applet.
+	 */
+	public ChronoTimerEmulator() {
+
+	}
+
+}

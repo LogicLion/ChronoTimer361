@@ -21,6 +21,8 @@ public static void main(String[] args) throws Exception
 	CommandReader r = new CommandReader();
 	Scanner input = new Scanner(System.in);
 	
+	
+	
 	//while(r.parse(input.nextLine()) != null);
 	
 	while(true){
