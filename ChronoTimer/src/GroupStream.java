@@ -8,13 +8,16 @@ import java.util.Queue;
 public class GroupStream implements IStream {
 
 private int _runNumber;
+private int _bibNumber;
+private LocalDateTime groupStart;
 private Queue<TimingRecord> runs;
 private Queue<TimingRecord> pendingRuns;
 private ArrayList<TimingRecord> completedRuns;
 
 public GroupStream()	
 {
-	_runNumber = 1;
+	_runNumber = 0;
+	_bibNumber = 0;
 	runs = new LinkedList<TimingRecord>();
 	pendingRuns = new LinkedList<TimingRecord>();
 	completedRuns = new ArrayList<TimingRecord>();
@@ -22,37 +25,30 @@ public GroupStream()
 
 public void num(int BIB)
 {
-	pendingRuns.add(new TimingRecord(BIB));
+	return;
 }
 
 public void cancelRecord()
 {
-	runs.peek().cancel();
-	completedRuns.add(runs.poll());
-	_runNumber++;
-	System.out.println("Next Racer");
+	_bibNumber++;
+	completedRuns.add(new TimingRecord(_bibNumber, groupStart, TimingRecord.STATUS.CANCEL));
 }
 
 public void startRecord(LocalDateTime start)
 {
-	TimingRecord current = pendingRuns.poll();
-	current.start(start);
-	runs.add(current);
+	groupStart = start;
 }
 
 public void finishRecord(LocalDateTime finish)
 {
-	runs.peek().finish(finish);
-	completedRuns.add(runs.poll());
-	_runNumber++;
-		
+	_bibNumber++;
+	completedRuns.add(new TimingRecord(_bibNumber, groupStart, finish, TimingRecord.STATUS.FINISH));
 }
 
 public void DNFRecord()
 {
-	runs.peek().DNF();
-	completedRuns.add(runs.poll());
-	_runNumber++;
+	_bibNumber++;
+	completedRuns.add(new TimingRecord(_bibNumber, groupStart, TimingRecord.STATUS.DNF));
 }
 
 

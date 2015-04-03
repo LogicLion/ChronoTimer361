@@ -179,6 +179,21 @@ public class Command
     											Integer.parseInt(split[2]));
     		timer.time(set);
     	}
+    	else if(this.cmdName.equals("EVENT")){
+    		timer.event(args.get(0));
+    	}
+    	else if(this.cmdName.equals("EXPORT")){
+    		timer.export(Integer.parseInt(args.get(0)));
+    	}
+    	else if(this.cmdName.equals("TRIG")){
+    		timer.trigger(Integer.parseInt(args.get(0)));
+    	}
+    	else if(this.cmdName.equals("NEWRUN")){
+    		timer.newRun();
+    	}
+    	else if(this.cmdName.equals("ENDRUN")){
+    		timer.endRun();
+    	}
     	else{
     		System.out.println(" dpofjpwf :   " + this.cmdName);
     		throw new Exception("Invalid command name");

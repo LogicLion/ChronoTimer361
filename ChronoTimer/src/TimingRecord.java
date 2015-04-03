@@ -9,7 +9,7 @@ private Duration _duration;
 private STATUS _eventCode;
 private int _BIB;
 
-private enum STATUS {
+public static enum STATUS {
 	 START, DNF, FINISH, CANCEL
 }
 
@@ -18,6 +18,20 @@ public TimingRecord(int BIB){
 	_start=null;
 	_finish=null;
 	_duration=null;
+}
+
+public TimingRecord(int BIB, LocalDateTime start, STATUS status){
+	_BIB=BIB;
+	_start=start;
+	_eventCode=status;
+	_duration=null;
+}
+
+public TimingRecord(int BIB, LocalDateTime start, LocalDateTime finish, STATUS status){
+	_BIB = BIB;
+	_start=start;
+	_finish=finish;
+	_duration=Duration.between(_start, _finish);
 }
 
 public void start(LocalDateTime startTime){
