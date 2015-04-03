@@ -14,9 +14,9 @@ private Queue<TimingRecord> runs;
 private Queue<TimingRecord> pendingRuns;
 private ArrayList<TimingRecord> completedRuns;
 
-public GroupStream()	
+public GroupStream(int runNumber)	
 {
-	_runNumber = 0;
+	_runNumber = runNumber;
 	_bibNumber = 0;
 	runs = new LinkedList<TimingRecord>();
 	pendingRuns = new LinkedList<TimingRecord>();
@@ -61,6 +61,12 @@ public String toString()
 		concat.append(_runNumber + "\t" + i.toString() + "\n");
 	}
 	return concat.toString();
+}
+
+public void finishRecord(LocalDateTime finish, int channel)
+{
+	return;
+	
 }
 
 }

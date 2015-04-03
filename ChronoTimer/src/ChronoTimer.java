@@ -38,15 +38,20 @@ public class ChronoTimer {
 	boolean _isOn;
 	Clock clock;
 	ChronoTimer(){
-		_stream = new IndividualStream();
+		_currentRun = 1;
+		_stream = new IndividualStream(_currentRun);
 		_streams = new ArrayList<IStream>();
 		_streams.add(_stream);
-		_currentRun = 0;
-		_channels = new Channel[4];
+
+		_channels = new Channel[8];
 		_channels[0] = new Channel();
 		_channels[1] = new Channel();
 		_channels[2] = new Channel();
 		_channels[3] = new Channel();
+		_channels[4] = new Channel();
+		_channels[5] = new Channel();
+		_channels[6] = new Channel();
+		_channels[7] = new Channel();
 		clock=Clock.systemUTC();
 	}
 	
@@ -71,20 +76,20 @@ public class ChronoTimer {
 	
 	public void event(String eventType){
 		if(eventType.equalsIgnoreCase("IND")){
-			_stream = new IndividualStream();
-			_streams.set(_currentRun, _stream);
+			_stream = new IndividualStream(_currentRun);
+			_streams.set(_currentRun-1, _stream);
 		}
 		else if(eventType.equalsIgnoreCase("GRP")){
-			_stream = new GroupStream();
-			_streams.set(_currentRun, _stream);
+			_stream = new GroupStream(_currentRun);
+			_streams.set(_currentRun-1, _stream);
 		}
 		else if(eventType.equalsIgnoreCase("PARIND")){
-			_stream = new IndividualParallelStream();
-			_streams.set(_currentRun, _stream);
+			_stream = new IndividualParallelStream(_currentRun);
+			_streams.set(_currentRun-1, _stream);
 		}
 		else if(eventType.equalsIgnoreCase("PARGRP")){
-			_stream= new GroupParallelStream();
-			_streams.set(_currentRun, _stream);
+			_stream= new GroupParallelStream(_currentRun);
+			_streams.set(_currentRun-1, _stream);
 		}
 	}
 
@@ -119,7 +124,7 @@ public class ChronoTimer {
 	
 	public void trigger(int channel)
 	{
-		if(_isOn){
+		if(_isOn && !(_stream instanceof GroupParallelStream)){
 			if(channel % 2 == 1){
 			_stream.startRecord(_channels[channel-1].trigger(clock));
 			}
@@ -127,13 +132,21 @@ public class ChronoTimer {
 			_stream.finishRecord(_channels[channel-1].trigger(clock));
 			}
 		}
+		else if(_isOn && _stream instanceof GroupParallelStream){
+			if(channel % 2 == 1){
+				_stream.startRecord(_channels[channel-1].trigger(clock));
+			}
+				else if(channel % 2 == 0){
+				_stream.finishRecord(_channels[channel-1].trigger(clock), channel);
+			}
+		}
 	}
 	
-	public void num(int runNumber)
+	public void num(int BIBNumber)
 	{
 		if(_isOn)
 		{
-			_stream.num(runNumber);
+			_stream.num(BIBNumber);
 		}
 	}
 	
@@ -154,14 +167,14 @@ public class ChronoTimer {
 	public void cancel() {
 		if(_isOn)
 		{
-			_stream.DNFRecord();
+			_stream.cancelRecord();
 		}
 	}
 	
 	public void newRun(){
 		if(_isOn)
 		{
-			_stream = new IndividualStream();
+			_stream = new IndividualStream(_currentRun);
 			_streams.add(_stream);
 		}
 	}

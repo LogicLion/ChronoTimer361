@@ -90,4 +90,11 @@ public String toString()
 	
 }
 
+public void setFinish(LocalDateTime globalStart, LocalDateTime finish) {
+	_start = globalStart;
+	_finish = finish;
+	_duration = Duration.between(_start, _finish);
+	
+}
+
 }

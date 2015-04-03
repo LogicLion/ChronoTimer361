@@ -12,9 +12,9 @@ private Queue<TimingRecord> runs;
 private Queue<TimingRecord> pendingRuns;
 private ArrayList<TimingRecord> completedRuns;
 
-public IndividualParallelStream()	
+public IndividualParallelStream(int runNumber)	
 {
-	_runNumber = 1;
+	_runNumber = runNumber;
 	runs = new LinkedList<TimingRecord>();
 	pendingRuns = new LinkedList<TimingRecord>();
 	completedRuns = new ArrayList<TimingRecord>();
@@ -29,8 +29,6 @@ public void cancelRecord()
 {
 	runs.peek().cancel();
 	completedRuns.add(runs.poll());
-	_runNumber++;
-	System.out.println("Next Racer");
 }
 
 public void startRecord(LocalDateTime start)
@@ -44,15 +42,18 @@ public void finishRecord(LocalDateTime finish)
 {
 	runs.peek().finish(finish);
 	completedRuns.add(runs.poll());
-	_runNumber++;
-		
+}
+
+public void finishRecord(LocalDateTime finish, int channel)
+{
+	return;
+	
 }
 
 public void DNFRecord()
 {
 	runs.peek().DNF();
 	completedRuns.add(runs.poll());
-	_runNumber++;
 }
 
 
