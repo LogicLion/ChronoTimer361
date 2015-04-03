@@ -52,6 +52,8 @@ public class Channel {
 		if(isArmed && hasSensor) isArmed=false;
 		else if(!isArmed && hasSensor) isArmed=true;
 		else throw new UnsupportedOperationException("Must connect a sensor before arming");
+		System.out.println(isArmed);
+
 	}
 	
 	public LocalDateTime trigger(Clock clock)

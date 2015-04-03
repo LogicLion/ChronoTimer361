@@ -21,6 +21,7 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
 public class ChronoTimer {
 	
 
@@ -30,7 +31,7 @@ public class ChronoTimer {
 	{
 		IND, GRP, PARIND, PARGRP
 	}
-	
+	public JTextPane printer;
 	IStream _stream;
 	ArrayList<IStream> _streams;
 	int _currentRun;
@@ -60,10 +61,12 @@ public class ChronoTimer {
 	}
 	
 	public void turnOn(){
+		System.out.println("ON");
 		_isOn=true;
 	}
 	
 	public void turnOff(){
+		System.out.println("OFF");
 		_isOn=false;
 	}
 	
@@ -150,10 +153,14 @@ public class ChronoTimer {
 		}
 	}
 	
+	
 	public void print(){
 		if(_isOn)
 		{
-			System.out.println(_stream.toString());
+			if(printer == null)
+				System.out.println(_stream.toString());
+			else
+				printer.setText(_stream.toString());
 		}
 	}
 
