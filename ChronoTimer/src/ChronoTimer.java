@@ -37,7 +37,9 @@ public class ChronoTimer {
 	Channel _channels[];
 	boolean _isOn;
 	Clock clock;
-	ChronoTimer(){
+	String _exportDirectory;
+	
+	public ChronoTimer(){
 		_currentRun = 1;
 		_stream = new IndividualStream(_currentRun);
 		_streams = new ArrayList<IStream>();
@@ -55,6 +57,24 @@ public class ChronoTimer {
 		clock=Clock.systemUTC();
 	}
 	
+	public ChronoTimer(String exportDirectory) {
+		_currentRun = 1;
+		_stream = new IndividualStream(_currentRun);
+		_streams = new ArrayList<IStream>();
+		_streams.add(_stream);
+		_exportDirectory = exportDirectory;
+		_channels = new Channel[8];
+		_channels[0] = new Channel();
+		_channels[1] = new Channel();
+		_channels[2] = new Channel();
+		_channels[3] = new Channel();
+		_channels[4] = new Channel();
+		_channels[5] = new Channel();
+		_channels[6] = new Channel();
+		_channels[7] = new Channel();
+		clock=Clock.systemUTC();
+	}
+
 	public Clock getClock(){
 		return clock;
 	}
@@ -188,7 +208,7 @@ public class ChronoTimer {
 	
 	public void export(int runNumber) throws FileNotFoundException{
 		Integer runNumberUp = new Integer(runNumber);
-		File file = new File("C:/Users/Noah/Documents/ChronoTimerOut/RunNumber" + runNumberUp.toString() + ".txt");
+		File file = new File(_exportDirectory+"/RunNumber" + runNumberUp.toString() + ".txt");
 		file.getParentFile().mkdirs();
 		PrintWriter writer = new PrintWriter(file);
 		writer.println(_streams.get(runNumber-1).toString());

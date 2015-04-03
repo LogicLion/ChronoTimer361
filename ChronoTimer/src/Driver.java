@@ -16,10 +16,12 @@ public class Driver {
 public static void main(String[] args) throws Exception
 {
 	//Create command reader here.
-	
-	ChronoTimer t = new ChronoTimer();
-	CommandReader r = new CommandReader();
+	System.out.println("Please enter an output directory for the export command");
 	Scanner input = new Scanner(System.in);
+	String exportDirectory = input.nextLine();
+	ChronoTimer t = new ChronoTimer(exportDirectory);
+	CommandReader r = new CommandReader();
+	System.out.println("Enter 'TEST test.txt' to run test data");
 	
 	
 	
