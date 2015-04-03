@@ -1,0 +1,255 @@
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.time.Clock;
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+import javax.swing.JApplet;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+public class ChronoTimer extends JApplet{
+	private static final long serialVersionUID = 1L;
+	
+	
+	private JTextField command = new JTextField("input inputData.txt", 20);
+	private JPanel keyPad = generateKeyPad();
+	static JTextArea record = new JTextArea(15, 15);
+	protected JLabel time = new JLabel();
+	
+	@Override
+	public void init() {
+		
+		try {
+	        javax.swing.SwingUtilities.invokeAndWait(new Runnable() {
+	            public void run() {
+	            	 setFocusable(true);
+	            	 requestFocusInWindow();
+	            	 setSize(600, 400);
+	            	 
+	            	 createContent();
+	            	 setVisible(true);
+	            }
+	        });
+	    } catch (Exception e) {
+	        System.err.println("createGUI didn't successfully complete");
+	    }
+	
+	}
+	
+	
+	
+	public void createContent(){
+	 JPanel jp = new JPanel(new GridLayout(4,1));
+	 JPanel com = new JPanel(new FlowLayout());
+	 record.setBackground(Color.BLACK);
+	 record.setForeground(Color.WHITE);
+	 record.setToolTipText("This is where race/racer data is displayed.");
+	 JScrollPane scrollPane = new JScrollPane(record);
+	 GridBagConstraints c = new GridBagConstraints();
+	 com.add(command);
+	 command.setToolTipText("Enter commands here.");
+	 jp.add(com);
+	 Font myFont = new Font("Helvetica", Font.BOLD + Font.ITALIC, 50);
+	 time.setFont(myFont);
+	 time.setForeground(Color.BLACK);
+	 jp.add(time);
+	 time.setToolTipText("System clock.");
+	 jp.setToolTipText("ChronoTimer");
+	 setLayout(new GridBagLayout());
+	 add(jp);
+		
+	 c.gridx = 1;
+	 c.gridy = 0;
+	 add(scrollPane, c);
+		
+	 c.gridx = 1;
+	 c.gridy = 1;
+	 c.fill = GridBagConstraints.BOTH;
+	 add(keyPad, c);
+	    
+	 //command.addActionListener(new CommandActionListener());
+	}
+	
+	/**
+	 * Forms our keypad
+	 * @return keypad JPanel with all of the buttons
+	 */
+	public JPanel generateKeyPad(){
+	    JPanel keyPad = new JPanel(new GridLayout(0,3));
+	    
+	    final Object [] buttons = 
+        {new JButton("1"), new JButton("2"), new JButton("3"),
+         new JButton("4"), new JButton("5"), new JButton("6"),
+         new JButton("7"), new JButton("8"), new JButton("9"),
+         new JButton("*"), new JButton("0"), new JButton("#")};
+
+	    //iterates 12 times to create the buttons needed and adds a listener for each one
+        for (int i = 0; i < buttons.length; ++i){
+            if(buttons[i] instanceof JButton){
+                keyPad.add((JButton)buttons[i]);
+                ((JButton)buttons[i]).setActionCommand(((JButton)buttons[i]).getName());
+                
+                ((JButton)buttons[i]).addActionListener(new ActionListener(){
+                    public void actionPerformed(ActionEvent e){
+                          record.append(e.getActionCommand());
+                    }
+                });
+            }
+        } 
+        return keyPad;
+    }
+	
+	
+	public enum Event
+	{
+		IND, GRP, PARIND, PARGRP
+	}
+	
+	IStream _stream;
+	
+	Channel _channels[];
+	boolean _isOn;
+	Clock clock;
+	ChronoTimer(){
+		_stream = new IndividualStream();
+		_channels = new Channel[4];
+		_channels[0] = new Channel();
+		_channels[1] = new Channel();
+		_channels[2] = new Channel();
+		_channels[3] = new Channel();
+		clock=Clock.systemUTC();
+	}
+	
+	public Clock getClock(){
+		return clock;
+	}
+	
+	public void turnOn(){
+		_isOn=true;
+	}
+	
+	public void turnOff(){
+		_isOn=false;
+	}
+	
+	public void time(LocalDateTime set){
+		Clock systemClock = Clock.systemDefaultZone();
+		clock=Clock.offset(systemClock, Duration.between(LocalDateTime.now(), set));
+		//LocalDateTime check = LocalDateTime.now(clock);
+		//System.out.println(check.toString());
+	}
+	
+	public void event(String eventType){
+		if(eventType.equalsIgnoreCase("IND")){
+			_stream = new IndividualStream();
+		}
+		else if(eventType.equalsIgnoreCase("GRP")){
+			_stream = new GroupStream();
+		}
+		else if(eventType.equalsIgnoreCase("PARIND")){
+			_stream = new IndividualParallelStream();
+		}
+		else if(eventType.equalsIgnoreCase("PARGRP")){
+			_stream= new GroupParallelStream();
+		}
+	}
+
+	public void connect(String sensorType, int channel){
+		if(_isOn)
+		{
+		_channels[channel-1].connect(sensorType);
+		}
+	}
+	
+	public void toggle(int channel){
+		if(_isOn)
+		{
+		_channels[channel-1].toggle();
+		}
+	}
+	
+	public void start(){
+		if(_isOn)
+		{
+			_stream.startRecord(_channels[0].trigger(clock));
+		}
+	}
+	
+	public void end(){
+		if(_isOn)
+		{
+			_stream.finishRecord(_channels[1].trigger(clock));	
+		}
+		
+	}
+	
+	public void trigger(int channel)
+	{
+		if(_isOn){
+			if(channel % 2 == 1){
+			_stream.startRecord(_channels[channel-1].trigger(clock));
+			}
+			else if(channel % 2 == 0){
+			_stream.finishRecord(_channels[channel-1].trigger(clock));
+			}
+		}
+	}
+	
+	public void num(int runNumber)
+	{
+		if(_isOn)
+		{
+			_stream.num(runNumber);
+		}
+	}
+	
+	public void print(){
+		if(_isOn)
+		{
+			System.out.println(_stream.toString());
+		}
+	}
+
+	public void DNF() {
+		if(_isOn)
+		{
+			_stream.DNFRecord();
+		}
+	}
+
+	public void cancel() {
+		if(_isOn)
+		{
+			_stream.DNFRecord();
+		}
+	}
+	
+	public void newRun(){
+		if(_isOn){
+			_stream = new IndividualStream();
+		}
+	}
+	
+	public void endRun(){
+		if(_isOn){
+			_stream = null;
+		}
+	}
+	
+
+	
+
+	
+
+	
+}
