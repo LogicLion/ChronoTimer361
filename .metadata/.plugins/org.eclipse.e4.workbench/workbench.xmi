@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_JyDAENmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_JyDAEdmgEeSyAL8IQdbx_A" bindingContexts="_JyEOMdmgEeSyAL8IQdbx_A">
+<<<<<<< HEAD
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;ChronoTimerEmulator.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimerEmulator.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoTimerEmulator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoInterface.java&quot; tooltip=&quot;ChronoTimer/src/ChronoInterface.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoInterface.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Driver.java&quot; tooltip=&quot;ChronoTimer/src/Driver.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Driver.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoTimer.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimer.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoTimer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Command.java&quot; tooltip=&quot;ChronoTimer/src/Command.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Command.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CommandReader.java&quot; tooltip=&quot;ChronoTimer/src/CommandReader.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/CommandReader.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Channel.java&quot; tooltip=&quot;ChronoTimer/src/Channel.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Channel.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicSwing.java&quot; tooltip=&quot;ChronoTimer/src/BasicSwing.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/BasicSwing.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;test.txt&quot; tooltip=&quot;ChronoTimer/test.txt&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/test.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+=======
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;ChronoTimerEmulator.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimerEmulator.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoTimerEmulator.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;test.txt&quot; tooltip=&quot;ChronoTimer/test.txt&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/test.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoTimer.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimer.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoTimer.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CommandReader.java&quot; tooltip=&quot;ChronoTimer/src/CommandReader.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/CommandReader.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoInterface.java&quot; tooltip=&quot;ChronoTimer/src/ChronoInterface.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/ChronoInterface.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Driver.java&quot; tooltip=&quot;ChronoTimer/src/Driver.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Driver.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Command.java&quot; tooltip=&quot;ChronoTimer/src/Command.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Command.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Channel.java&quot; tooltip=&quot;ChronoTimer/src/Channel.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/Channel.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicSwing.java&quot; tooltip=&quot;ChronoTimer/src/BasicSwing.java&quot;>&#xA;&lt;persistable path=&quot;/ChronoTimer/src/BasicSwing.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+>>>>>>> what
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_JyDAEdmgEeSyAL8IQdbx_A" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_JyDAEtmgEeSyAL8IQdbx_A" label="%trimmedwindow.label.eclipseSDK" x="42" y="23" width="1280" height="800">
@@ -79,7 +83,11 @@
           <tags>persp.viewSC:org.eclipse.wb.core.StructureView</tags>
           <tags>persp.viewSC:org.eclipse.wb.core.PaletteView</tags>
           <tags>persp.perspSC:org.eclipse.wst.jsdt.ui.JavaPerspective</tags>
+<<<<<<< HEAD
           <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAFdmgEeSyAL8IQdbx_A" selectedElement="_JyDAFtmgEeSyAL8IQdbx_A" horizontal="true">
+=======
+          <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAFdmgEeSyAL8IQdbx_A" selectedElement="_JyDAIdmgEeSyAL8IQdbx_A" horizontal="true">
+>>>>>>> what
             <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAFtmgEeSyAL8IQdbx_A" containerData="2500" selectedElement="_JyDAF9mgEeSyAL8IQdbx_A">
               <children xsi:type="basic:PartStack" xmi:id="_JyDAF9mgEeSyAL8IQdbx_A" elementId="left" containerData="6000" selectedElement="_JyDAGNmgEeSyAL8IQdbx_A">
                 <tags>newtablook</tags>
@@ -98,6 +106,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_JyDAINmgEeSyAL8IQdbx_A" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_JyDnyNmgEeSyAL8IQdbx_A"/>
               </children>
             </children>
+<<<<<<< HEAD
             <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAIdmgEeSyAL8IQdbx_A" containerData="7500" selectedElement="_JyDAItmgEeSyAL8IQdbx_A" horizontal="true">
               <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAItmgEeSyAL8IQdbx_A" containerData="7500" selectedElement="_JyDAI9mgEeSyAL8IQdbx_A">
                 <children xsi:type="advanced:Placeholder" xmi:id="_JyDAI9mgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.editorss" containerData="6700" ref="_JyDBV9mgEeSyAL8IQdbx_A"/>
@@ -105,6 +114,14 @@
                   <tags>newtablook</tags>
                   <tags>org.eclipse.e4.secondaryDataStack</tags>
                   <tags>Minimized</tags>
+=======
+            <children xsi:type="basic:PartSashContainer" xmi:id="_JyDAIdmgEeSyAL8IQdbx_A" containerData="7500" selectedElement="_OKlvYNopEeS9u89hh7uQvw" horizontal="true">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_OKlvYNopEeS9u89hh7uQvw" containerData="7500" selectedElement="_JyDAJNmgEeSyAL8IQdbx_A">
+                <children xsi:type="advanced:Placeholder" xmi:id="_JyDAI9mgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.editorss" containerData="7425" ref="_JyDBV9mgEeSyAL8IQdbx_A"/>
+                <children xsi:type="basic:PartStack" xmi:id="_JyDAJNmgEeSyAL8IQdbx_A" elementId="bottom" containerData="2575" selectedElement="_JyDAKdmgEeSyAL8IQdbx_A">
+                  <tags>newtablook</tags>
+                  <tags>org.eclipse.e4.secondaryDataStack</tags>
+>>>>>>> what
                   <children xsi:type="advanced:Placeholder" xmi:id="_JyDAJdmgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.views.ProblemView" ref="_JyDnjtmgEeSyAL8IQdbx_A"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_JyDAJtmgEeSyAL8IQdbx_A" elementId="org.eclipse.jdt.ui.JavadocView" ref="_JyDnktmgEeSyAL8IQdbx_A"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_JyDAJ9mgEeSyAL8IQdbx_A" elementId="org.eclipse.jdt.ui.SourceView" ref="_JyDnk9mgEeSyAL8IQdbx_A"/>
@@ -158,6 +175,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_JyDBV9mgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.editorss" selectedElement="_JyDBWNmgEeSyAL8IQdbx_A">
+<<<<<<< HEAD
       <children xsi:type="basic:PartStack" xmi:id="_JyDBWNmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_JyDBZNmgEeSyAL8IQdbx_A">
         <tags>newtablook</tags>
         <tags>org.eclipse.e4.primaryDataStack</tags>
@@ -165,24 +183,44 @@
         <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_JyDBWdmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BasicSwing.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicSwing.java&quot; partName=&quot;BasicSwing.java&quot; title=&quot;BasicSwing.java&quot; tooltip=&quot;ChronoTimer/src/BasicSwing.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/BasicSwing.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;332&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+=======
+      <children xsi:type="basic:PartStack" xmi:id="_JyDBWNmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_sGEzENomEeS9u89hh7uQvw">
+        <tags>newtablook</tags>
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
+        <children xsi:type="basic:Part" xmi:id="_JyDBWdmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BasicSwing.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicSwing.java&quot; partName=&quot;BasicSwing.java&quot; title=&quot;BasicSwing.java&quot; tooltip=&quot;ChronoTimer/src/BasicSwing.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/BasicSwing.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;355&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+>>>>>>> what
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_JyDBWtmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="test.txt" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.gif" closeable="true">
+<<<<<<< HEAD
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;test.txt&quot; partName=&quot;test.txt&quot; title=&quot;test.txt&quot; tooltip=&quot;ChronoTimer/test.txt&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/test.txt&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+=======
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;test.txt&quot; partName=&quot;test.txt&quot; title=&quot;test.txt&quot; tooltip=&quot;ChronoTimer/test.txt&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/test.txt&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;506&quot; selectionTopPixel=&quot;208&quot;/>&#xA;&lt;/editor>"/>
+>>>>>>> what
           <tags>Editor</tags>
           <tags>org.eclipse.ui.DefaultTextEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_JyDBW9mgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ChronoTimer.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+<<<<<<< HEAD
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoTimer.java&quot; partName=&quot;ChronoTimer.java&quot; title=&quot;ChronoTimer.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimer.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/ChronoTimer.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2816&quot; selectionTopPixel=&quot;1719&quot;/>&#xA;&lt;/editor>"/>
+=======
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ChronoTimer.java&quot; partName=&quot;ChronoTimer.java&quot; title=&quot;ChronoTimer.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimer.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/ChronoTimer.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3668&quot; selectionTopPixel=&quot;1719&quot;/>&#xA;&lt;/editor>"/>
+>>>>>>> what
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_JyDBXNmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="CommandReader.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
+<<<<<<< HEAD
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CommandReader.java&quot; partName=&quot;CommandReader.java&quot; title=&quot;CommandReader.java&quot; tooltip=&quot;ChronoTimer/src/CommandReader.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/CommandReader.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;33&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+=======
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CommandReader.java&quot; partName=&quot;CommandReader.java&quot; title=&quot;CommandReader.java&quot; tooltip=&quot;ChronoTimer/src/CommandReader.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/CommandReader.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;38&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+>>>>>>> what
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -227,6 +265,7 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
+<<<<<<< HEAD
         <children xsi:type="basic:Part" xmi:id="_JyDBZNmgEeSyAL8IQdbx_A" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ChronoTimerEmulator.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;ChronoTimerEmulator.java&quot; partName=&quot;ChronoTimerEmulator.java&quot; title=&quot;ChronoTimerEmulator.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimerEmulator.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/ChronoTimerEmulator.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1000&quot; selectionTopPixel=&quot;150&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -248,6 +287,13 @@
             <tags>menuContribution:popup</tags>
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
+=======
+        <children xsi:type="basic:Part" xmi:id="_sGEzENomEeS9u89hh7uQvw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ChronoTimerEmulator.java" iconURI="platform:/plugin/org.eclipse.wb.core.ui/icons/gui_editor.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wb.core.guiEditor&quot; name=&quot;ChronoTimerEmulator.java&quot; partName=&quot;ChronoTimerEmulator.java&quot; title=&quot;ChronoTimerEmulator.java&quot; tooltip=&quot;ChronoTimer/src/ChronoTimerEmulator.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ChronoTimer/src/ChronoTimerEmulator.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;5766&quot; selectionTopPixel=&quot;5651&quot;/>&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.wb.core.guiEditor</tags>
+          <tags>removeOnHide</tags>
+>>>>>>> what
         </children>
       </children>
     </sharedElements>
@@ -399,7 +445,11 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JyDn99mgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:HandledToolItem" xmi:id="_aloGANokEeSfFI1zt5UxGQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_JyE5R9mgEeSyAL8IQdbx_A"/>
+=======
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ogQmINoqEeSRCaZckqQH8A" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_JyE5R9mgEeSyAL8IQdbx_A"/>
+>>>>>>> what
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JyDoCdmgEeSyAL8IQdbx_A" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -423,11 +473,16 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JyDoR9mgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
+<<<<<<< HEAD
         <children xsi:type="menu:HandledToolItem" xmi:id="_altlkNokEeSfFI1zt5UxGQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_JyE4-NmgEeSyAL8IQdbx_A"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_JyDoUdmgEeSyAL8IQdbx_A" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
         <tags>Draggable</tags>
       </children>
+=======
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ogZJAtoqEeSRCaZckqQH8A" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_JyE4-NmgEeSyAL8IQdbx_A"/>
+      </children>
+>>>>>>> what
       <children xsi:type="menu:ToolBar" xmi:id="_JyDoU9mgEeSyAL8IQdbx_A" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_JyDoVNmgEeSyAL8IQdbx_A" elementId="group.editor" toBeRendered="false"/>
@@ -471,7 +526,11 @@
       <children xsi:type="menu:ToolControl" xmi:id="_JyDob9mgEeSyAL8IQdbx_A" elementId="right(org.eclipse.jdt.ui.JavaPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
       </children>
+<<<<<<< HEAD
       <children xsi:type="menu:ToolControl" xmi:id="_JyDocNmgEeSyAL8IQdbx_A" elementId="bottom(org.eclipse.jdt.ui.JavaPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+=======
+      <children xsi:type="menu:ToolControl" xmi:id="_JyDocNmgEeSyAL8IQdbx_A" elementId="bottom(org.eclipse.jdt.ui.JavaPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+>>>>>>> what
         <tags>TrimStack</tags>
       </children>
     </trimBars>
@@ -928,7 +987,11 @@
     <bindings xmi:id="_JyDpeNmgEeSyAL8IQdbx_A" keySequence="ALT+COMMAND+X E" command="_JyFdkNmgEeSyAL8IQdbx_A">
       <tags>platform:cocoa</tags>
     </bindings>
+<<<<<<< HEAD
     <bindings xmi:id="_aFEWodokEeSfFI1zt5UxGQ" keySequence="COMMAND+CTRL+F" command="_JyFc-dmgEeSyAL8IQdbx_A"/>
+=======
+    <bindings xmi:id="_oCHRkdoqEeSRCaZckqQH8A" keySequence="COMMAND+CTRL+F" command="_JyFc-dmgEeSyAL8IQdbx_A"/>
+>>>>>>> what
   </bindingTables>
   <bindingTables xmi:id="_JyDpetmgEeSyAL8IQdbx_A" elementId="org.eclipse.ui.serverViewScope" bindingContext="_JyEOVtmgEeSyAL8IQdbx_A">
     <bindings xmi:id="_JyDpe9mgEeSyAL8IQdbx_A" keySequence="ALT+COMMAND+D" command="_JyE4x9mgEeSyAL8IQdbx_A"/>
@@ -1143,7 +1206,11 @@
     <bindings xmi:id="_JyDp-9mgEeSyAL8IQdbx_A" keySequence="ALT+CR" command="_JyE4KNmgEeSyAL8IQdbx_A"/>
   </bindingTables>
   <bindingTables xmi:id="_JyDp_NmgEeSyAL8IQdbx_A" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_JyEOYdmgEeSyAL8IQdbx_A">
+<<<<<<< HEAD
     <bindings xmi:id="_aFFkwNokEeSfFI1zt5UxGQ" keySequence="M1+W" command="_JyFc-9mgEeSyAL8IQdbx_A"/>
+=======
+    <bindings xmi:id="_oCH4oNoqEeSRCaZckqQH8A" keySequence="M1+W" command="_JyFc-9mgEeSyAL8IQdbx_A"/>
+>>>>>>> what
   </bindingTables>
   <bindingTables xmi:id="_JyDp_tmgEeSyAL8IQdbx_A" bindingContext="_JyEOZ9mgEeSyAL8IQdbx_A"/>
   <bindingTables xmi:id="_JyDp_9mgEeSyAL8IQdbx_A" bindingContext="_JyEOaNmgEeSyAL8IQdbx_A"/>
