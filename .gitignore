@@ -11,13 +11,11 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-<<<<<<< HEAD
 .metadata/.log
 
 .metadata/.log
 
-=======
->>>>>>> what
+
 ChronoTimer/Sprint2.zip
 
 ChronoTimer/NotesOnSubmission.txt
@@ -25,3 +23,6 @@ ChronoTimer/NotesOnSubmission.txt
 *.gen
 
 .metadata/.mylyn/tasks.xml.zip
+ChronoTimer/Sprint2.zip
+
+ChronoTimer/NotesOnSubmission.txt
