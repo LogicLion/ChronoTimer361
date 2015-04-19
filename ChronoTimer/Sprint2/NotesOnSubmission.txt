@@ -1,0 +1,19 @@
+Just wanted to mention a few things about our submission.
+
+1) The Chronotimer Emulator has been fully mocked up but the listeners have not yet been implemented.
+
+2) We modified some of the test input for several reasons.
+
+a) Some of the test input had events firing at prior times. This caused errors when we tried to issue a sleep command. (Because computer programs can't time travel)
+
+b) Some of the input defied the conventions listed in the project requirements. Namely that Sensors 2, 4, 6, and 8 should be used for the finish command. The test input had us using 1 and 3 for both start and finish in the same run which didn't seem possible without altering the fundamental design to defy the requirements. We decided to keep the convention from the Project Requirements.
+
+c) Many of the times were hours apart which made it difficult to test in an efficient manner and it would have made grading our project similarly time consuming. Each command is now two seconds apart so you can run the included test file in a timely manner.
+
+3) When running the driver our program will ask you for an export directory for the export command. After that it will prompt you to enter TEST test.txt to run the test file. It should be included in the project directory.
+
+I think that's everything.
+
+Thanks!
+
+Noah Trilling and Thomas Hocking
