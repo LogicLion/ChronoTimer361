@@ -10,7 +10,10 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 
 ChronoTimer/Sprint2.zip
 
 ChronoTimer/NotesOnSubmission.txt
+=======
+>>>>>>> 9d47a2e10530a56103575409f2e927e747de8b19
